@@ -9,12 +9,8 @@ app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cors());
 
-app.set('views', __dirname + '/views');
-app.set('view engine', 'html');
-app.engine()
-
 app.get('/api/email', (req, res, next) => {
-    res.render('success.html');
+    res.send('welcome...');
 })
 
 
